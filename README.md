@@ -19,19 +19,30 @@ With this new data the company expects to build a recommender system that is abl
 
 The customer transaction dataset held by the merchant has 8 variables as shown below, and it contains all the transactions occurring between 01/12/2010 and 09/12/2011. Over that particular period, there were 25900 valid transactions in total, associated with 4070 unique items and 4372 customers from 38 different countries. The dataset has 541909 instances, each for a particular item contained in a transaction. Also it is important to note that many of ManyGiftsUK customers are wholesalers.
 
-Metadata
-Name	Meaning
-InvoiceNo	Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation.
-StockCode	Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
-Description	Product (item) name. Nominal.
-Quantity	The quantities of each product (item) per transaction. Numeric.
-InvoiceDate	Invoice Date and time. Numeric, the day and time when each transaction was generated.
-UnitPrice	Unit price. Numeric, Product price per unit in pounds.
-CustomerID	Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
-Country	Country name. Nominal, the name of the country where each customer resides.
-Expected Outcomes
-Explore the data and build models to answer the problems:
-Recommender system: the website homepage offers a wide range of products the user might be interested on
-Cold start: offer relevant products to new customers
-Implement adequate evaluation strategies and select an appropriate quality measure
-In the deployment phase, elaborate on the challenges and recommendations in implementing the recommender system
+## Metadata
+
+| Name                        | Meaning                                                                                                                                                        |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| InvoiceNo                   | Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation.    |
+| StockCode                   | Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.                                                            |
+| Description                 | Product (item) name. Nominal.                                                                                                                                  |
+| Quantity                    | The quantities of each product (item) per transaction. Numeric.                                                                                                |
+| InvoiceDate                 | Invoice Date and time. Numeric, the day and time when each transaction was generated.                                                                          |
+| UnitPrice                   | Unit price. Numeric, Product price per unit in pounds.                                                                                                         |
+| CustomerID                  | Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.                                                                        |
+| Country                     | Country name. Nominal, the name of the country where each customer resides.                                                                                    |
+
+## Expected Outcomes
+
+1. Explore the data and build models to answer the problems:
+    1. Recommender system: the website homepage offers a wide range of products the user might be interested on
+    2. Cold start: offer relevant products to new customers
+2. Implement adequate evaluation strategies and select an appropriate quality measure
+3. In the deployment phase, elaborate on the challenges and recommendations in implementing the recommender system
+
+## References
+
+Iyengar, S. S., & Lepper, M. R. (2000). When choice is demotivating: Can one desire too much of a good thing?. Journal of personality and social psychology, 79(6), 995.
+
+Hu, Y., Koren, Y., & Volinsky, C. (2008). Collaborative filtering for implicit feedback datasets. 2008 Eighth IEEE International Conference on Data Mining, 263–272.
+
